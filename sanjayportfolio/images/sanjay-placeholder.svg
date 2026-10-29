@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141419" />
+      <stop offset="50%" stop-color="#0a0a0d" />
+      <stop offset="100%" stop-color="#050507" />
+    </linearGradient>
+    <radialGradient id="redGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#e50914" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f24" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cccccc" />
+    </linearGradient>
+    <linearGradient id="blazerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a30" />
+      <stop offset="100%" stop-color="#111114" />
+    </linearGradient>
+    <linearGradient id="fadeBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad)" />
+  <circle cx="340" cy="240" r="280" fill="url(#redGlow)" />
+
+  <!-- Tree trunk background (leaning against tree) -->
+  <path d="M 460 0 C 450 200, 470 450, 490 800 L 580 800 C 560 450, 550 200, 560 0 Z" fill="url(#treeGrad)" opacity="0.8" />
+  <path d="M 450 180 Q 420 160 380 150 Q 410 180 460 210 Z" fill="#18181c" opacity="0.6" />
+
+  <!-- Subtle grid lines for 3D/VFX creator aesthetic -->
+  <line x1="40" y1="0" x2="40" y2="800" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+  <line x1="560" y1="0" x2="560" y2="800" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+  <line x1="0" y1="650" x2="600" y2="650" stroke="#e50914" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- Silhouette / Stylized Figure: Sanjayram J -->
+  <!-- White shirt torso leaning on right side tree -->
+  <g id="figure">
+    <!-- Head / Hair -->
+    <ellipse cx="320" cy="180" rx="46" ry="58" fill="#e2b998" />
+    <!-- Hair -->
+    <path d="M 270 170 C 270 120, 310 110, 350 115 C 375 120, 380 145, 375 170 C 365 140, 340 130, 310 132 C 285 135, 275 155, 270 170 Z" fill="#151518" />
+    <!-- Facial profile / jawline -->
+    <path d="M 275 180 C 275 225, 305 242, 335 240 C 355 238, 368 220, 370 200" fill="none" stroke="#cca282" stroke-width="2" />
+    
+    <!-- Neck -->
+    <path d="M 302 235 L 302 275 L 342 275 L 342 235 Z" fill="#cca282" />
+    
+    <!-- White Shirt (Collar & Torso) -->
+    <path d="M 260 280 L 310 320 L 320 285 L 330 320 L 380 280 L 420 400 L 410 650 L 230 650 L 220 400 Z" fill="url(#shirtGrad)" />
+    <!-- Shirt Collar detail -->
+    <polygon points="305,275 320,315 285,285" fill="#f0f0f5" stroke="#ddd" stroke-width="1" />
+    <polygon points="335,275 320,315 355,285" fill="#ffffff" stroke="#ddd" stroke-width="1" />
+    <line x1="320" y1="315" x2="320" y2="650" stroke="#cccccc" stroke-width="2" stroke-dasharray="8 12" />
+
+    <!-- Black Blazer draped over left shoulder (screen right) -->
+    <path d="M 350 270 C 390 270, 440 310, 445 420 C 450 520, 430 620, 400 680 C 380 630, 385 500, 375 420 C 370 380, 360 320, 350 270 Z" fill="url(#blazerGrad)" stroke="#3a3a42" stroke-width="1.5" />
+    <!-- Blazer lapel / fold -->
+    <path d="M 365 290 Q 400 350 395 480" fill="none" stroke="#e50914" stroke-opacity="0.6" stroke-width="2" />
+  </g>
+
+  <!-- Cinema aspect marks / HUD overlays -->
+  <rect x="25" y="25" width="20" height="2" fill="#e50914" />
+  <rect x="25" y="25" width="2" height="20" fill="#e50914" />
+  <rect x="555" y="25" width="20" height="2" fill="#e50914" />
+  <rect x="573" y="25" width="2" height="20" fill="#e50914" />
+  <rect x="25" y="753" width="20" height="2" fill="#e50914" />
+  <rect x="25" y="735" width="2" height="20" fill="#e50914" />
+  <rect x="555" y="753" width="20" height="2" fill="#e50914" />
+  <rect x="573" y="735" width="2" height="20" fill="#e50914" />
+
+  <!-- Rec badge -->
+  <circle cx="50" cy="55" r="5" fill="#e50914" />
+  <text x="65" y="59" fill="#ffffff" font-family="'Courier New', monospace" font-size="12" letter-spacing="2">REC // 4K 24FPS</text>
+  <text x="450" y="59" fill="#888899" font-family="'Courier New', monospace" font-size="11" letter-spacing="1">VIT // ANIMATION</text>
+
+  <!-- Bottom Dark Gradient Fade -->
+  <rect y="450" width="600" height="350" fill="url(#fadeBottom)" />
+
+  <!-- Lower Overlay Label -->
+  <text x="50%" y="720" text-anchor="middle" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="28" letter-spacing="4">SANJAYRAM J</text>
+  <text x="50%" y="745" text-anchor="middle" fill="#e50914" font-family="sans-serif" font-weight="600" font-size="12" letter-spacing="3">MULTIMEDIA &amp; ANIMATION</text>
+  <text x="50%" y="770" text-anchor="middle" fill="#666677" font-family="sans-serif" font-size="10" letter-spacing="1">[ REPLACE WITH /images/sanjay.png ]</text>
+</svg>
